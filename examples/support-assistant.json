@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "name": "Synthetic customer support drafting assistant",
+  "purpose": "Draft replies from customer tickets and internal knowledge articles; a support specialist remains responsible for sending replies.",
+  "business_value": "Hypothesis: reduce drafting time while preserving accuracy. Compare a limited pilot against manual handling, including review effort and correction rates.",
+  "owner": "Synthetic support operations lead",
+  "components": [
+    {"id": "customer", "name": "Customer submitting a support ticket", "kind": "user", "trust_zone": "public"},
+    {"id": "portal", "name": "Support application", "kind": "application", "trust_zone": "organization"},
+    {"id": "knowledge", "name": "Internal knowledge articles", "kind": "data_store", "trust_zone": "organization"},
+    {"id": "model", "name": "Hosted language model", "kind": "model", "trust_zone": "provider"},
+    {"id": "ticket_tool", "name": "Ticket update tool", "kind": "tool", "trust_zone": "organization"}
+  ],
+  "data_flows": [
+    {"source": "customer", "target": "portal", "data_classification": "personal", "untrusted": true, "description": "Synthetic customer text that may contain adversarial instructions"},
+    {"source": "knowledge", "target": "portal", "data_classification": "internal", "untrusted": false, "description": "Retrieved internal guidance; trust declaration needs validation against ingestion permissions"},
+    {"source": "portal", "target": "model", "data_classification": "personal", "untrusted": true, "description": "Prompt containing the ticket and selected guidance"},
+    {"source": "model", "target": "portal", "data_classification": "internal", "untrusted": true, "description": "Generated draft and suggested ticket actions"},
+    {"source": "portal", "target": "ticket_tool", "data_classification": "internal", "untrusted": false, "description": "Apply a ticket update after declared specialist review; enforcement is not verified"}
+  ],
+  "consequential_decisions": false,
+  "controls": [
+    {"id": "human_review", "status": "implemented", "evidence": "Synthetic design claim only; no approval enforcement test has been supplied"},
+    {"id": "access_control", "status": "planned", "evidence": "Proposed ticket-scoped tool identity"},
+    {"id": "monitoring", "status": "planned"}
+  ]
+}
