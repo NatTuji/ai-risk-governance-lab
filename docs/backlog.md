@@ -1,6 +1,20 @@
 # Initial issue backlog
 
-Prepared issue bodies for GitHub; issue URLs will be recorded here and in PROJECT_STATUS.md after creation. Public `NatTuji/ai-risk-governance-lab` and Apache-2.0 are approved, app authorization is verified, and the initial license/charter are published. Milestone names below are planning definitions until actual GitHub milestone creation is verified.
+GitHub Issues are now the working backlog. Public `NatTuji/ai-risk-governance-lab` and Apache-2.0 are approved; implementation PR #1 is merged and hosted CI is verified. Milestone names below remain planning definitions until actual native milestone creation is verified.
+
+| Work item | GitHub Issue | Session-end state |
+| --- | --- | --- |
+| B01 Repository publication | [#2](https://github.com/NatTuji/ai-risk-governance-lab/issues/2) | Closed, completed |
+| B02 Working MVP | [#3](https://github.com/NatTuji/ai-risk-governance-lab/issues/3) | Closed, completed |
+| B03 Hosted CI | [#4](https://github.com/NatTuji/ai-risk-governance-lab/issues/4) | Closed, completed |
+| B04 Reviewed evaluation set | [#5](https://github.com/NatTuji/ai-risk-governance-lab/issues/5) | Open, next functional task |
+| B05 Actors and misuse | [#6](https://github.com/NatTuji/ai-risk-governance-lab/issues/6) | Open |
+| B06 Human-reviewed evidence | [#7](https://github.com/NatTuji/ai-risk-governance-lab/issues/7) | Open |
+| B07 Mapping and edition review | [#8](https://github.com/NatTuji/ai-risk-governance-lab/issues/8) | Open |
+| B08 Agent-assistance experiment | [#9](https://github.com/NatTuji/ai-risk-governance-lab/issues/9) | Open, deferred |
+| B09 Professional walkthrough | [#10](https://github.com/NatTuji/ai-risk-governance-lab/issues/10) | Open |
+| B10 Native milestones | [#11](https://github.com/NatTuji/ai-risk-governance-lab/issues/11) | Open, creation tooling unavailable |
+| B11 Main-branch protection | [#12](https://github.com/NatTuji/ai-risk-governance-lab/issues/12) | Open, administration tooling unavailable |
 
 ## Milestones to create
 

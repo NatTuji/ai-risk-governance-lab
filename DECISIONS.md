@@ -54,6 +54,8 @@ The owner created public `NatTuji/ai-risk-governance-lab`. Direct metadata looku
 
 Resolution: after the owner installed ChatGPT Codex Connector for NatTuji, installation/repository listings included the intended account/project. The approved LICENSE write succeeded and readback matched the local standard license. `main` now contains a license and charter; feature publication may proceed. The earlier failure remains an audit record, not a current blocker.
 
+Publication result: feature PR #1 merged at `4bb17f710ffb180e81ac032779d141caf4b68fd8` after exact source-tree verification, a separate review, and successful Python 3.11–3.14 hosted checks. Initial setup Issues #2–#4 closed. API-created remote history differs from the preserved local history; content verification is the continuity mechanism until a normal authenticated Git fetch is available.
+
 ## ADR-009 — Keep framework editions explicit
 
 Date: 2026-11-15 America/Edmonton. Status: selected.

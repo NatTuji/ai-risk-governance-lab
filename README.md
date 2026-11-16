@@ -4,13 +4,14 @@ A lightweight Python tool for examining a proposed AI deployment before an organ
 
 Organizations face risks from deploying AI poorly and from failing to use it effectively. This lab examines both: what could go wrong, what business value is expected, and what evidence would justify a controlled pilot.
 
-**Status:** initial MVP, prepared on `feat/assessment-cli` for the first pull request. Repository access and the Apache-2.0 license are verified; hosted CI verification is pending. This is an educational assessment aid with five rules, not a comprehensive risk assessment, legal opinion, certification, or deployment approval system.
+**Status:** working MVP published on `main` through [PR #1](https://github.com/NatTuji/ai-risk-governance-lab/pull/1). [Hosted CI](https://github.com/NatTuji/ai-risk-governance-lab/actions/runs/43805777964) passed on Python 3.11–3.14, including 54 tests and both report formats. This is an educational assessment aid with five rules, not a comprehensive risk assessment, legal opinion, certification, or deployment approval system.
 
 ## Try it
 
 Use Python 3.11 or later. The runtime and tests use only the standard library. No API key, model download, database, or container is required.
 
 ```sh
+git clone https://github.com/NatTuji/ai-risk-governance-lab.git
 cd ai-risk-governance-lab
 python3 -m ai_risk_lab assess examples/support-assistant.json
 python3 -m ai_risk_lab assess examples/support-assistant.json --format json
@@ -63,7 +64,7 @@ docs/           architecture, method, research, threat model, backlog
 
 Use small branches and pull requests for substantive changes. Explain the trigger, expected behavior, uncertainty, and validation. Add a behavioral test for a new risk rule, including a case where it must not trigger. Never commit real tickets, credentials, or organizational evidence. See [contribution guidance](CONTRIBUTING.md).
 
-Project continuity lives in [PROJECT_STATUS.md](PROJECT_STATUS.md), [ROADMAP.md](ROADMAP.md), [DECISIONS.md](DECISIONS.md), and [LEARNING_LOG.md](LEARNING_LOG.md). [The publication-ready backlog](docs/backlog.md) will become GitHub Issues after repository access is established.
+Project continuity lives in [PROJECT_STATUS.md](PROJECT_STATUS.md), [ROADMAP.md](ROADMAP.md), [DECISIONS.md](DECISIONS.md), and [LEARNING_LOG.md](LEARNING_LOG.md). [The backlog](docs/backlog.md) links to actual GitHub Issues. Native milestones and main-branch protection remain tracked setup tasks.
 
 ## License
 

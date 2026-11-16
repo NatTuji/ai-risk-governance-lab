@@ -13,7 +13,7 @@ Assets include assessment integrity, input confidentiality, local files, framewo
 | Malicious input author | Insert HTML or Markdown that disguises report content | Escape user text, collapse newlines, never follow evidence references; CLI HTML test | Viewer-specific rendering behavior is not exhaustively tested |
 | Malicious input author | Oversized input, excessive nesting, or cyclic flows exhaust resources | 1 MiB file cap, field/list limits, cycle-safe graph traversal; size and cycle tests | File input must be a normal trusted local file; special devices/FIFOs could block; no execution time sandbox |
 | Accidental operator error | Save a report over input or another local file | Exclusive output creation, tested against existing and input paths | Caller still chooses destination and local access permissions |
-| Contributor or compromised dependency | Alter rule logic or CI to fabricate assurance or expose data | No runtime dependencies; small reviewed changes, read-only CI permissions, synthetic examples | Action tags are not immutable pins; hosted CI not yet run; branch protection not configured |
+| Contributor or compromised dependency | Alter rule logic or CI to fabricate assurance or expose data | No runtime dependencies; small reviewed changes, verified hosted CI on Python 3.11–3.14, read-only CI permissions, synthetic examples | Action tags are not immutable pins; main-branch protection not configured (tracked in issue #12) |
 | Reviewer under time pressure | Interpret no findings or framework references as approval/compliance | Repeated limitations, explicit human-review decision and unassessed residual risk | Warnings alone cannot ensure a disciplined review process |
 
 ## Sensitive data handling

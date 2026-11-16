@@ -2,6 +2,8 @@
 
 Environment: Linux, Python 3.12.14, Git 2.52.0. Runtime and tests use the standard library. These are local results, not hosted CI results.
 
+Latest result: [PR #1](https://github.com/NatTuji/ai-risk-governance-lab/pull/1) is merged, and [hosted CI](https://github.com/NatTuji/ai-risk-governance-lab/actions/runs/43805777964) passed on Python 3.11–3.14. The dated entries below preserve the earlier local checks and resolved setup failures.
+
 ## Behavioral verification
 
 ```sh
@@ -57,3 +59,13 @@ Remote code, Issues, PRs, milestones, and hosted CI are still unverified/uncreat
 The earlier HTTP 403 is resolved after repository-specific app installation. The LICENSE create-file operation returned commit `e8b3ab392872d7826bdf474f75cf322f7d9e9e40`, and fetched content matched the local standard text. The initial charter is at `edddbe2d62dad00c884c21f673d52856b28227af`; `feat/assessment-cli` was created from it. Remaining feature upload and hosted checks will be recorded after verification.
 
 NIST AI RMF/CSF selected sections and ISO/agentic public metadata have now been checked, along with upstream README introductions. Detailed mapping validity remains provisional; see `research.md`. Report wording was updated to reflect that distinction and the synthetic report regenerated; rule triggers are unchanged.
+
+## Verified feature publication and merge
+
+- Local suite: 54 tests pass after report wording/sample regeneration.
+- Uploaded feature commit: `75a6c528fb57a4d814b60e99266f4a0eb4eee594`; tree `3bfb7662c416804dd3849b33190c55b5c2b14c69`. Every one of 33 uploaded file blobs matched the reviewed local snapshot, with no extra files.
+- [PR check run](https://github.com/NatTuji/ai-risk-governance-lab/actions/runs/43805777964): completed successfully for the feature head. Inspected all four jobs: test (3.11), test (3.12), test (3.13), test (3.14). Each job's unittest, Markdown generation, and JSON generation steps succeeded. The [push run](https://github.com/NatTuji/ai-risk-governance-lab/actions/runs/43805621482) also reported success.
+- A separate read-only review found no merge blockers. Merge used the expected feature head SHA to reject an unexpected concurrent change.
+- [PR #1](https://github.com/NatTuji/ai-risk-governance-lab/pull/1) merged at `4bb17f710ffb180e81ac032779d141caf4b68fd8`; direct main-ref readback confirmed it. Setup Issues #2–#4 were confirmed closed; #5–#12 remain open.
+
+Still unverified or intentionally incomplete: macOS execution, real-world assessment accuracy, full framework applicability/coverage, control effectiveness, native milestone creation, branch protection, and production readiness. Code tests and CI success do not resolve those limits.

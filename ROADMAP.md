@@ -6,18 +6,17 @@ Use this file for direction and GitHub Issues for day-to-day work once connected
 | --- | --- | --- | --- |
 | M0 — Select and design | Bounded concept, source research, architecture, assumptions | Decision records and primary-source notes | Selected source sections/metadata and upstream introductions checked; mapping review remains iterative |
 | M1 — Traceable assessment | Local JSON → rules → Markdown/JSON | Synthetic demo, negative tests, reproducible sample report, continuity docs | Implemented locally; final verification recorded in PROJECT_STATUS |
-| M1 publication | Authorized portfolio repository and issue backlog | Approved account/visibility/license; verified remote, CI, Issues/milestones | App access resolved; license/charter published; feature PR and CI verification in progress |
+| M1 publication | Authorized portfolio repository and issue backlog | Approved account/visibility/license; verified remote, CI, Issues/milestones | Implementation merged via PR #1; hosted CI verified; Issues created; native milestones pending #11 |
 | M2 — Structured adversarial review | Actors, incentives, assets, prerequisites, misuse cases, evidence records | Reviewed scenario set, explicit rejected hypotheses, control/evidence provenance | Next implementation milestone |
 | M3 — Evaluated agent assistance | Limited research or evidence assistance without autonomous acceptance | Baseline comparison, error analysis, injection/permission tests | Deferred until M2 establishes evaluation data |
 | M4 — Professional demonstration | Coherent portfolio narrative and repeatable realistic example | Walkthrough, sample artifacts, limitations, independent review | Planned |
 
 ## Immediate sequence
 
-1. Finish local verification and commit the MVP.
-2. Verify primary framework sources and existing-tool scope when network access is available. Establish GitHub access; inspect repository metadata only to find a suitable destination. Do not modify other repositories.
-3. Public-repository/account, Apache-2.0, and app authorization are resolved. Publish only this project and verify the resulting files.
-4. Create milestones and Issues from the prepared backlog. Push a feature branch and open a PR for the working implementation; verify hosted CI.
-5. Expand the reviewed baseline with at least five distinct organizational use cases before adding rules or agent-generated suggestions.
+1. Expand the reviewed baseline with at least five distinct organizational use cases ([#5](https://github.com/NatTuji/ai-risk-governance-lab/issues/5)) before adding rules or agent-generated suggestions.
+2. Review local framework mapping applicability and the OWASP 2026 edition ([#8](https://github.com/NatTuji/ai-risk-governance-lab/issues/8)).
+3. Configure native milestones and main-branch protection when administration tooling is available (#11 and #12).
+4. Develop structured actors, incentives, prerequisites, and human-reviewed evidence records (#6 and #7).
 
 ## Learning checkpoints
 

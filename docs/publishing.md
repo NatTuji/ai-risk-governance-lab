@@ -14,11 +14,10 @@ Repository setup uses GitHub connector APIs because local CLI credentials were i
 - Initial charter: `edddbe2d62dad00c884c21f673d52856b28227af`.
 - Feature branch: `feat/assessment-cli`, created from the charter commit.
 
-## Remaining publication sequence
+## Verified publication result
 
-1. Upload the reviewed tree as a logical feature commit and verify every blob against the local snapshot. Use expected branch-head checks and never force-update an unexpectedly changed ref.
-2. Open the implementation PR and create Issues from the prepared backlog.
-3. Verify actual hosted CI, including supported Python versions and both report formats. A workflow configuration is not proof of passing checks.
-4. Record actual PR, Issue, commit, and check URLs. Keep PROJECT_STATUS.md current.
+The first implementation commit `75a6c528fb57a4d814b60e99266f4a0eb4eee594` contains tree `3bfb7662c416804dd3849b33190c55b5c2b14c69`. All 33 blobs matched the reviewed local snapshot. [PR #1](https://github.com/NatTuji/ai-risk-governance-lab/pull/1) merged at `4bb17f710ffb180e81ac032779d141caf4b68fd8` after a separate review and successful [hosted CI](https://github.com/NatTuji/ai-risk-governance-lab/actions/runs/43805777964). The four Python jobs (3.11–3.14) and their test/report steps all succeeded.
+
+Eleven Issues (#2–#12) were created. #2–#4 closed with the implementation merge; #5–#12 remain open. Native milestones and main protection are still unconfigured, tracked in #11 and #12. A minor documentation follow-up records these observed results on `main`; it does not change runtime behavior. Subsequent substantive changes should continue through feature branches and PRs.
 
 API publication creates a different remote commit history from the preserved local Git history. Compare file contents/tree hashes explicitly and record remote commit references. Do not claim an upload, Issue, PR, milestone, or CI run exists before verifying it.
