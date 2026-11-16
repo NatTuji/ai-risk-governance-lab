@@ -69,3 +69,9 @@ NIST AI RMF/CSF selected sections and ISO/agentic public metadata have now been 
 - [PR #1](https://github.com/NatTuji/ai-risk-governance-lab/pull/1) merged at `4bb17f710ffb180e81ac032779d141caf4b68fd8`; direct main-ref readback confirmed it. Setup Issues #2–#4 were confirmed closed; #5–#12 remain open.
 
 Still unverified or intentionally incomplete: macOS execution, real-world assessment accuracy, full framework applicability/coverage, control effectiveness, native milestone creation, branch protection, and production readiness. Code tests and CI success do not resolve those limits.
+
+## Main safeguard preparation
+
+Owner-authorized main-only ruleset is prepared in `.github/rulesets/main.json`. Its JSON parses successfully; the four check context/source pairs match observed GitHub Actions check runs at `d2f15f193ada331360794d176fae4767617693a5`. An independent review checked required parameters and solo-maintainer semantics against GitHub's official rules schema. No runtime code changed, so no additional local unit-test run was needed.
+
+The live ruleset listing returned `[]`. Preparation has not changed settings or established enforcement. Import and save through the UI, inspect the bypass list, and read effective main rules before closing #12. See `main-protection.md` for the exact policy and verification limits.

@@ -1,6 +1,6 @@
 # Project status
 
-Last updated: 2026-11-15 America/Edmonton (host date 2026-11-16 UTC). Remote default branch: `main`; active local handoff branch: `docs/publication-status`. Working project: `/workspace/ai-risk-governance-lab`. Earlier November 16 entries use the host's UTC date for this same local-date session.
+Last updated: 2026-11-15 America/Edmonton (host date 2026-11-16 UTC). Remote default branch: `main`; active local branch: `chore/main-safeguards`. Working project: `/workspace/ai-risk-governance-lab`. Earlier November 16 entries use the host's UTC date for this same local-date session.
 
 ## Current state
 
@@ -37,7 +37,7 @@ M1 working implementation and publication are complete, with native milestone se
 
 1. Build the manually reviewed multi-scenario evaluation set in [#5](https://github.com/NatTuji/ai-risk-governance-lab/issues/5) before adding rule breadth or agent integration.
 2. Review pinned OWASP 2025 mappings and the newer 2026 edition in [#8](https://github.com/NatTuji/ai-risk-governance-lab/issues/8); do not silently migrate identifiers.
-3. Configure native milestones ([#11](https://github.com/NatTuji/ai-risk-governance-lab/issues/11)) and main protection ([#12](https://github.com/NatTuji/ai-risk-governance-lab/issues/12)) when a supported administration route is available. Current connector actions cannot create milestones or change branch rules. Protection has not been enabled.
+3. Apply the owner-authorized main safeguards ([#12](https://github.com/NatTuji/ai-risk-governance-lab/issues/12)) using the prepared [.github/rulesets/main.json](.github/rulesets/main.json) and [import instructions](docs/main-protection.md). Live check contexts and GitHub Actions ID 15368 are verified; current ruleset listing is empty. The connector cannot write administration settings, the CLI credentials are invalid, and Chrome control is unavailable. The owner must complete the final import/Create action. **Protection is not enabled or verified yet.** Native milestones remain pending ([#11](https://github.com/NatTuji/ai-risk-governance-lab/issues/11)).
 4. Continue actor/incentive ([#6](https://github.com/NatTuji/ai-risk-governance-lab/issues/6)) and evidence-record ([#7](https://github.com/NatTuji/ai-risk-governance-lab/issues/7)) design after evaluation baselines are reviewed.
 
 ## Continuity and execution

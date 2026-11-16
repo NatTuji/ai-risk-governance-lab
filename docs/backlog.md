@@ -14,7 +14,7 @@ GitHub Issues are now the working backlog. Public `NatTuji/ai-risk-governance-la
 | B08 Agent-assistance experiment | [#9](https://github.com/NatTuji/ai-risk-governance-lab/issues/9) | Open, deferred |
 | B09 Professional walkthrough | [#10](https://github.com/NatTuji/ai-risk-governance-lab/issues/10) | Open |
 | B10 Native milestones | [#11](https://github.com/NatTuji/ai-risk-governance-lab/issues/11) | Open, creation tooling unavailable |
-| B11 Main-branch protection | [#12](https://github.com/NatTuji/ai-risk-governance-lab/issues/12) | Open, administration tooling unavailable |
+| B11 Main-branch protection | [#12](https://github.com/NatTuji/ai-risk-governance-lab/issues/12) | Owner-authorized import prepared; activation and effective-rule verification pending |
 
 ## Milestones to create
 
